@@ -1,0 +1,29 @@
+{
+  "name": "talak-kinash-backend",
+  "version": "1.0.0",
+  "description": "deals and promotion application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "estifanos zinabu",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "chapa": "^1.0.5",
+    "chapa-nodejs": "^2.0.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.14.2",
+    "mongoose": "^8.12.1",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.10.0",
+    "validator": "^13.12.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.6.0"
+  }
+}
