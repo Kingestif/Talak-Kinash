@@ -52,6 +52,13 @@ exports.signup = async(req,res,next)=>{
         });
 
     }catch(error){
+        if (error.code === 11000) {
+            return res.status(400).json({
+                status: "error",
+                message: `User with ${Object.keys(error.keyPattern)[0]} already exists`
+            });
+        }
+
         res.status(500).json({
             status: 'error',
             message: error.message
