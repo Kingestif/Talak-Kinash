@@ -33,7 +33,7 @@ exports.initializePayment = async (req, res) => {
       const customerInfo = {
         amount,
         currency,
-        email,
+        email: seller.email,
         first_name,
         last_name,
         callback_url: "https://talakkinash/verified.com/", 
